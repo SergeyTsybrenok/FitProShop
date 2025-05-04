@@ -19,7 +19,7 @@ try {
         description:
           "Классический топ Gorilla Wear свободного кроя с рваными краями и большим принтом на груди.",
         price: "5280",
-        picture: "/FitProShop/../src/img/90107900-classic-work-out-top-black-41.png",
+        picture: "../src/img/90107900-classic-work-out-top-black-41.png",
         gender: "Муж",
       },
       // 1
@@ -33,7 +33,7 @@ try {
         description:
           "Шорты из сетчатой ткани высокого качества с добавлением микрофибры. Эластичный пояс на шнурке, два боковых кармана.",
         price: "4400",
-        picture: "/FitProShop/../src/img/top1.jpg",
+        picture: "./src/img/top1.jpg",
         gender: "Муж",
       },
       // 2
@@ -47,7 +47,7 @@ try {
         description:
           "Высокие ботинки Gwear Classic идеально подходят для занятий бодибилдингом и пауэрлифтингом.",
         price: "10500",
-        picture: "/FitProShop/../src/img/top2.jpg",
+        picture: "/src/img/top2.jpg",
         gender: "Муж",
       },
       // 3
@@ -75,7 +75,8 @@ try {
         description:
           "Укороченная толстовка свободного кроя из органического хлопка с флисовой подкладкой.",
         price: "7040",
-        picture: "/FitProShop/../src/img/91877120-tracey-cropped-hoodie-beige-01.jpg",
+        picture:
+          "/FitProShop/../src/img/91877120-tracey-cropped-hoodie-beige-01.jpg",
         gender: "Жен",
       },
       // 5
@@ -116,7 +117,8 @@ try {
         name: 'Полотенце "Zip Pocket"',
         description: "50см x 100см",
         price: "3300",
-        picture: "/FitProShop/../src/img/99241900-zip-pocket-gym-towel-black-2.jpg",
+        picture:
+          "/FitProShop/../src/img/99241900-zip-pocket-gym-towel-black-2.jpg",
         gender: "Уни",
       },
       // 8
@@ -144,7 +146,8 @@ try {
         description:
           "Эти кроссовки для бодибилдинга унисекс разработаны специально для серьезных спортсменов и отличаются функциональностью, стилем и комфортом для достижения максимальной производительности во время тренировок.",
         price: "11660",
-        picture: "/FitProShop/../src/img/90016509-gwear-pro-high-tops-red-black-2.png",
+        picture:
+          "/FitProShop/../src/img/90016509-gwear-pro-high-tops-red-black-2.png",
         gender: "Муж",
       },
       // 10
@@ -172,7 +175,8 @@ try {
         description:
           "Спортивный топ-бра со средней степенью поддержки. Тонкие съемные чашечки обеспечивают надежную поддержку груди. Регулируемые бретели и тройная застежка на крючках на спине обеспечивают индивидуальную посадку.",
         price: "3960",
-        picture: "/FitProShop/../src/img/91538806-colby-sports-bra-gray-pink-01.jpg",
+        picture:
+          "/FitProShop/../src/img/91538806-colby-sports-bra-gray-pink-01.jpg",
         gender: "Жен",
       },
       // 12
@@ -236,7 +240,7 @@ try {
       description:
         "Классический топ Gorilla Wear свободного кроя с рваными краями и большим принтом на груди.",
       price: "5280",
-      picture: "FitProShop/../FitProShop/src/img/90107900-classic-work-out-top-black-41.png",
+      picture: "../src/img/90107900-classic-work-out-top-black-41.png",
       gender: "Муж",
     },
     // 1
@@ -250,7 +254,7 @@ try {
       description:
         "Шорты из сетчатой ткани высокого качества с добавлением микрофибры. Эластичный пояс на шнурке, два боковых кармана.",
       price: "4400",
-      picture: "/FitProShop/../src/img/top1.jpg",
+      picture: "./src/img/top1.jpg",
       gender: "Муж",
     },
     // 2
@@ -264,7 +268,7 @@ try {
       description:
         "Высокие ботинки Gwear Classic идеально подходят для занятий бодибилдингом и пауэрлифтингом.",
       price: "10500",
-      picture: "/FitProShop/../src/img/top2.jpg",
+      picture: "/src/img/top2.jpg",
       gender: "Муж",
     },
     // 3
@@ -292,7 +296,8 @@ try {
       description:
         "Укороченная толстовка свободного кроя из органического хлопка с флисовой подкладкой.",
       price: "7040",
-      picture: "/FitProShop/../src/img/91877120-tracey-cropped-hoodie-beige-01.jpg",
+      picture:
+        "/FitProShop/../src/img/91877120-tracey-cropped-hoodie-beige-01.jpg",
       gender: "Жен",
     },
     // 5
@@ -319,7 +324,8 @@ try {
       name: 'Бутылка "Gradient 1000 ml"',
       description: "Объём 1000мл",
       price: "2090",
-      picture: "/FitProShop/../src/img/99221188-gradient-water-bottle-green-orange-101.jpg",
+      picture:
+        "/FitProShop/../src/img/99221188-gradient-water-bottle-green-orange-101.jpg",
       gender: "Уни",
     },
     // 7
@@ -332,7 +338,8 @@ try {
       name: 'Полотенце "Zip Pocket"',
       description: "50см x 100см",
       price: "3300",
-      picture: "/FitProShop/../src/img/99241900-zip-pocket-gym-towel-black-2.jpg",
+      picture:
+        "/FitProShop/../src/img/99241900-zip-pocket-gym-towel-black-2.jpg",
       gender: "Уни",
     },
     // 8
@@ -360,7 +367,8 @@ try {
       description:
         "Эти кроссовки для бодибилдинга унисекс разработаны специально для серьезных спортсменов и отличаются функциональностью, стилем и комфортом для достижения максимальной производительности во время тренировок.",
       price: "11660",
-      picture: "/FitProShop/../src/img/90016509-gwear-pro-high-tops-red-black-2.png",
+      picture:
+        "/FitProShop/../src/img/90016509-gwear-pro-high-tops-red-black-2.png",
       gender: "Муж",
     },
     // 10
@@ -388,7 +396,8 @@ try {
       description:
         "Спортивный топ-бра со средней степенью поддержки. Тонкие съемные чашечки обеспечивают надежную поддержку груди. Регулируемые бретели и тройная застежка на крючках на спине обеспечивают индивидуальную посадку.",
       price: "3960",
-      picture: "/FitProShop/../src/img/91538806-colby-sports-bra-gray-pink-01.jpg",
+      picture:
+        "/FitProShop/../src/img/91538806-colby-sports-bra-gray-pink-01.jpg",
       gender: "Жен",
     },
     // 12
@@ -490,17 +499,22 @@ watch(
 // Функция добавления товара в избранное
 function addInFavorite(productData, userId) {
   // Проверяем, что товара в избранном ещё нет
-  const favoriteProductBool = favoriteLocalStorage.value.find(element => element.userId === userId && element.productData.id === productData.id)
+  const favoriteProductBool = favoriteLocalStorage.value.find(
+    (element) =>
+      element.userId === userId && element.productData.id === productData.id
+  );
   // Если нет --> добавляем
   if (!favoriteProductBool) {
     favoriteLocalStorage.value.push({
       productData: productData,
-      userId: userId
-    })
-  } 
+      userId: userId,
+    });
+  }
   // Устанавливаем флаг, что данный товар в избранном
-  productData.favorite = true
-  const product = productsLocalStorage.value.find(p => p.id === productData.id);
+  productData.favorite = true;
+  const product = productsLocalStorage.value.find(
+    (p) => p.id === productData.id
+  );
   if (product) {
     product.favorite = true;
   }
@@ -509,12 +523,17 @@ function addInFavorite(productData, userId) {
 // Функция удаления товара из избранного
 function deleteInFavorite(productData, userId) {
   // Ищем индекс элемента в массиве при условии, что пользователь и товар в массиве совпадают
-  const index = favoriteLocalStorage.value.findIndex(element => element.userId === userId && element.productData.id === productData.id)
-  // Если индекс -1 (товар не найден) --> устанавливаем флаг, что товара в избранном нет и удаляем товар по его индексу 
+  const index = favoriteLocalStorage.value.findIndex(
+    (element) =>
+      element.userId === userId && element.productData.id === productData.id
+  );
+  // Если индекс -1 (товар не найден) --> устанавливаем флаг, что товара в избранном нет и удаляем товар по его индексу
   if (index !== -1) {
     productData.favorite = false;
     favoriteLocalStorage.value.splice(index, 1);
-    const product = productsLocalStorage.value.find(p => p.id === productData.id);
+    const product = productsLocalStorage.value.find(
+      (p) => p.id === productData.id
+    );
     if (product) {
       product.favorite = false;
     }
@@ -524,31 +543,41 @@ function deleteInFavorite(productData, userId) {
 // Функция добавления товара в корзину
 function addInBasket(productData, userId) {
   // Проверяем, что товара в корзине ещё нет
-  const basketProductBool = basketLocalStorage.value.find(element => element.userId === userId && element.productData.id === productData.id)
+  const basketProductBool = basketLocalStorage.value.find(
+    (element) =>
+      element.userId === userId && element.productData.id === productData.id
+  );
   // Если нет --> добавляем
   if (!basketProductBool) {
     basketLocalStorage.value.push({
       productData: productData,
-      userId: userId
-    })
-  } 
+      userId: userId,
+    });
+  }
   // Устанавливаем флаг, что данный товар в корзине
-  productData.basket = true
-  const product = productsLocalStorage.value.find(p => p.id === productData.id);
-    if (product) {
-      product.basket = true;
-    }
+  productData.basket = true;
+  const product = productsLocalStorage.value.find(
+    (p) => p.id === productData.id
+  );
+  if (product) {
+    product.basket = true;
+  }
 }
 
 // Функция удаления товара из корзины
 function deleteInBasket(productData, userId) {
   // Ищем индекс элемента в массиве при условии, что пользователь и товар в массиве совпадают
-  const index = basketLocalStorage.value.findIndex(element => element.userId === userId && element.productData.id === productData.id)
-  // Если индекс -1 (товар не найден) --> устанавливаем флаг, что товара в корзине нет и удаляем товар по его индексу 
+  const index = basketLocalStorage.value.findIndex(
+    (element) =>
+      element.userId === userId && element.productData.id === productData.id
+  );
+  // Если индекс -1 (товар не найден) --> устанавливаем флаг, что товара в корзине нет и удаляем товар по его индексу
   if (index !== -1) {
     productData.basket = false;
     basketLocalStorage.value.splice(index, 1);
-    const product = productsLocalStorage.value.find(p => p.id === productData.id);
+    const product = productsLocalStorage.value.find(
+      (p) => p.id === productData.id
+    );
     if (product) {
       product.basket = false;
     }

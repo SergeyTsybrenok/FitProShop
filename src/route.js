@@ -34,7 +34,7 @@ import modalOrder from "./components/modals/modalOrder.vue";
 import modalAddItems from "./components/modals/modalAddItems.vue";
 
 const routes = [
-  { path: "/", component: index, name: "index" },
+  { path: "/FitProShop/", component: index, name: "index" },
   { path: "/FitProShop/catalog", component: catalog, name: "catalog" },
   { path: "/FitProShop/sale", component: sale, name: "sale" },
   { path: "/FitProShop/about", component: about, name: "about" },
