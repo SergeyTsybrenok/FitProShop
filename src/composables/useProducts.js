@@ -16,7 +16,7 @@ const defaultProducts = [ // 0
     description:
       "Классический топ Gorilla Wear свободного кроя с рваными краями и большим принтом на груди.",
     price: "5280",
-    picture: ".../public/img/90107900-classic-work-out-top-black-41.png",
+    picture: "/img/90107900-classic-work-out-top-black-41.png",
     gender: "Муж",
   },
   // 1
@@ -30,7 +30,7 @@ const defaultProducts = [ // 0
     description:
       "Шорты из сетчатой ткани высокого качества с добавлением микрофибры. Эластичный пояс на шнурке, два боковых кармана.",
     price: "4400",
-    picture: "public/img/top1.jpg",
+    picture: "img/top1.jpg",
     gender: "Муж",
   },
   // 2

@@ -105,7 +105,7 @@ function deletefavorite(productItem, userId) {
           <div class="forSending">
             <RouterLink :to="{ name: 'productCard', params: { id: localProduct.id } }">
               <div class="imageFavorite">
-                <img class="cardImg" :src="localProduct.picture" alt="top1">
+                <img class="cardImg" :src="localProduct.picture" alt="product">
               </div>
               <p>{{ localProduct.name }}</p>
               <p>{{ localProduct.price }} рублей</p>
