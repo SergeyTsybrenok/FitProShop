@@ -30,14 +30,14 @@ if (!userActive.value) {
   <h3>Заказы</h3>
   
   <table>
-    <thead>
+    <tbody>
       <td class="th">Номер заказа</td>
       <td class="th">Статус оплаты</td>
       <td class="th">Статус доставки</td>
       <td class="th">Сумма</td>
       <td class="th">Дата оформления</td>
-    </thead>
-    <tbody>
+
+
       <tr>
         <td>e</td>
         <td>e</td>

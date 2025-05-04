@@ -77,13 +77,12 @@ function deleteBasket(productItem, userId) {
   <div v-if="userActive">
     <div v-if="massBas.length !== 0">
       <table>
-        <thead>
+          <tbody>      
           <td class="th">Товар</td>
           <td class="th">Название</td>
           <td class="th">Стоимость</td>
           <td class="th">Количество</td>
-        </thead>
-        <tbody>
+
           <!-- Перебираем все товары в корзине -->
           <template v-for="localProduct in massBas">
             <tr>
