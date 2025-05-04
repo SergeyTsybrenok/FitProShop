@@ -39,7 +39,7 @@ function addBasket(productItem, userId) {
 }
 
 // Функция удаления товара из корзины
-function deleteBasket(productItem, userId) {
+function deleteBasket(productItem, userId) { 
   useProducts().deleteInBasket(productItem, userId)
   local.modalShow = true
   local.modalType = 'deleteBasket'
