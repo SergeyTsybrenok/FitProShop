@@ -4,8 +4,8 @@ const productsLocalStorage = ref([]);
 const basketLocalStorage = ref([]);
 const favoriteLocalStorage = ref([]);
 
-
-const defaultProducts = [ // 0  
+const defaultProducts = [
+  // 0
   {
     id: 0,
     basket: false,
@@ -16,7 +16,8 @@ const defaultProducts = [ // 0
     description:
       "Классический топ Gorilla Wear свободного кроя с рваными краями и большим принтом на груди.",
     price: "5280",
-    picture: "https://katushka1743.github.io/FitProShop/img/90107900-classic-work-out-top-black-41.png",
+    picture:
+      "https://katushka1743.github.io/FitProShop/img/90107900-classic-work-out-top-black-41.png",
     // picture: "img/90107900-classic-work-out-top-black-41.png",
     gender: "Муж",
   },
@@ -61,7 +62,8 @@ const defaultProducts = [ // 0
     description:
       "Эту классическую майку-безрукавку просто невозможно не заметить. Она традиционная и прочная.",
     price: "3050",
-    picture: "img/top3.jpg",
+    picture: "https://katushka1743.github.io/FitProShop/img/top3.jpg",
+    // picture: "img/top3.jpg",
     gender: "Муж",
   },
   // 4
@@ -75,8 +77,8 @@ const defaultProducts = [ // 0
     description:
       "Укороченная толстовка свободного кроя из органического хлопка с флисовой подкладкой.",
     price: "7040",
-    picture:
-      "img/91877120-tracey-cropped-hoodie-beige-01.jpg",
+    picture: "https://katushka1743.github.io/FitProShop/img/91877120-tracey-cropped-hoodie-beige-01.jpg",
+    // picture: "img/91877120-tracey-cropped-hoodie-beige-01.jpg",
     gender: "Жен",
   },
   // 5
@@ -90,7 +92,8 @@ const defaultProducts = [ // 0
     description:
       "Штаны свободного кроя из хлопкового трикотажа в рубчик. Эластичный пояс на резинке, два боковых кармана на молнии.",
     price: "5940",
-    picture: "img/augustine-bk01.jpg",
+    picture: "https://katushka1743.github.io/FitProShop/img/augustine-bk01.jpg",
+    // picture: "img/augustine-bk01.jpg",
     gender: "Муж",
   },
   // 6
@@ -103,8 +106,8 @@ const defaultProducts = [ // 0
     name: 'Бутылка "Gradient 1000 ml"',
     description: "Объём 1000мл",
     price: "2090",
-    picture:
-      "img/99221188-gradient-water-bottle-green-orange-101.jpg",
+    picture: "https://katushka1743.github.io/FitProShop/img/99221188-gradient-water-bottle-green-orange-101.jpg",
+    // picture: "img/99221188-gradient-water-bottle-green-orange-101.jpg",
     gender: "Уни",
   },
   // 7
@@ -117,8 +120,8 @@ const defaultProducts = [ // 0
     name: 'Полотенце "Zip Pocket"',
     description: "50см x 100см",
     price: "3300",
-    picture:
-      "img/99241900-zip-pocket-gym-towel-black-2.jpg",
+    picture: "https://katushka1743.github.io/FitProShop/img/99241900-zip-pocket-gym-towel-black-2.jpg",
+    // picture: "img/99241900-zip-pocket-gym-towel-black-2.jpg",
     gender: "Уни",
   },
   // 8
@@ -132,7 +135,8 @@ const defaultProducts = [ // 0
     description:
       "Большая тренировочная сумка-рюкзак из высокопрочного материала отлично соответствует потребностям спортсменов за счет многофункциональности. Ее можно носить как рюкзак благодаря уплотненной подкладке на спине. ",
     price: "9240",
-    picture: "img/011.png",
+    picture: "https://katushka1743.github.io/FitProShop/img/011.png",
+    // picture: "img/011.png",
     gender: "Уни",
   },
   // 9
@@ -146,8 +150,8 @@ const defaultProducts = [ // 0
     description:
       "Эти кроссовки для бодибилдинга унисекс разработаны специально для серьезных спортсменов и отличаются функциональностью, стилем и комфортом для достижения максимальной производительности во время тренировок.",
     price: "11660",
-    picture:
-      "img/90016509-gwear-pro-high-tops-red-black-2.png",
+    picture: "https://katushka1743.github.io/FitProShop/img/90016509-gwear-pro-high-tops-red-black-2.png",
+    // picture: "img/90016509-gwear-pro-high-tops-red-black-2.png",
     gender: "Муж",
   },
   // 10
@@ -161,7 +165,8 @@ const defaultProducts = [ // 0
     description:
       "Лосины из мягкого стрейчевого материала, обеспечивающего максимальную свободу движений. Широкий эластичный пояс из брендированной резинки, плоские швы, логотип на голени.",
     price: "4840",
-    picture: "img/91954800-colby-leggings-gray-9.png",
+    picture: "https://katushka1743.github.io/FitProShop/img/91954800-colby-leggings-gray-9.png",
+    // picture: "img/91954800-colby-leggings-gray-9.png",
     gender: "Жен",
   },
   // 11
@@ -175,8 +180,8 @@ const defaultProducts = [ // 0
     description:
       "Спортивный топ-бра со средней степенью поддержки. Тонкие съемные чашечки обеспечивают надежную поддержку груди. Регулируемые бретели и тройная застежка на крючках на спине обеспечивают индивидуальную посадку.",
     price: "3960",
-    picture:
-      "img/91538806-colby-sports-bra-gray-pink-01.jpg",
+    picture: "https://katushka1743.github.io/FitProShop/img/91538806-colby-sports-bra-gray-pink-01.jpg",
+    // picture: "img/91538806-colby-sports-bra-gray-pink-01.jpg",
     gender: "Жен",
   },
   // 12
@@ -190,7 +195,8 @@ const defaultProducts = [ // 0
     description:
       "Многоразовая двухслойная защитная маска с карманом для фильтра (фильтр в комплект не входит). Анатомическая форма и удобные резинки-повязки минимизируют давление на мягкие ткани лица.",
     price: "660",
-    picture: "img/99178900-face-mask-01.jpg",
+    picture: "https://katushka1743.github.io/FitProShop/img/99178900-face-mask-01.jpg",
+    // picture: "img/99178900-face-mask-01.jpg",
     gender: "Уни",
   },
   // 13
@@ -204,7 +210,8 @@ const defaultProducts = [ // 0
     description:
       "Тренировочная сумка из высокопрочного материала с двойными ручками и съемным регулируемым ремнем через плечо. Уплотненное дно, одно большое отделение на молнии, а также внутренние карманы.",
     price: "7700",
-    picture: "img/photo_5447243675500407571_y.png",
+    picture: "https://katushka1743.github.io/FitProShop/img/photo_5447243675500407571_y.png",
+    // picture: "img/photo_5447243675500407571_y.png",
 
     gender: "Уни",
   },
@@ -219,21 +226,22 @@ const defaultProducts = [ // 0
     description:
       "Многофункциональный рюкзак с изолированной модульной системой для размещения 2-х контейнеров для еды, подойдет как для спортсменов, так и для повседневного использования. ",
     price: "13640",
-    picture: "img/photo_5447243675500407570_y.png",
+    picture: "https://katushka1743.github.io/FitProShop/img/photo_5447243675500407570_y.png",
+    // picture: "img/photo_5447243675500407570_y.png",
 
     gender: "Уни",
-  }, ];
+  },
+];
 
 // Загружаем данные из localStorage для всех продуктов
 try {
   if (localStorage.getItem("productsLS") === null) {
-    productsLocalStorage.value = defaultProducts
-
+    productsLocalStorage.value = defaultProducts;
   } else {
     productsLocalStorage.value = JSON.parse(localStorage.getItem("productsLS"));
   }
 } catch (error) {
-    productsLocalStorage.value = defaultProducts
+  productsLocalStorage.value = defaultProducts;
 }
 
 // Загружаем данные из localStorage для корзины
