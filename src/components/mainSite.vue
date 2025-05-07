@@ -20,6 +20,9 @@ const userActive = computed(() => {
 
 const isMenuOpen = ref(false)
 
+function toggleMenu(params) {
+	isMenuOpen.value = !isMenuOpen.value
+} 
 </script>
 
 
@@ -33,7 +36,7 @@ const isMenuOpen = ref(false)
 
 		<!-- Навигационное меню -->
 		<!-- Кнопка бургера (меню для адаптации) -->
-		<button class="burger" @click="isMenuOpen = !isMenuOpen">
+		<button class="burger" @click="toggleMenu">
 			<span class="burger-line"></span>
 			<span class="burger-line"></span>
 			<span class="burger-line"></span>
@@ -41,42 +44,42 @@ const isMenuOpen = ref(false)
 		<!-- Меню для ПК -->
 		<nav class="nav" :class="{ open: isMenuOpen }">
 			<!-- Кнопки навигации с подсветкой активной страницы -->
-			<RouterLink :to="{ name: 'index' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'index' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn" :class="{ 'activePage': route.path === '/' }">Главная</button>
 			</RouterLink>
 
-			<RouterLink :to="{ name: 'catalog' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'catalog' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn" :class="{ 'activePage': route.path === '/FitProShop/catalog' }">Каталог</button>
 			</RouterLink>
 
-			<RouterLink :to="{ name: 'sale' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'sale' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn" :class="{ 'activePage': route.path === '/FitProShop/sale' }">Акции</button>
 			</RouterLink>
 
-			<RouterLink :to="{ name: 'about' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'about' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn" :class="{ 'activePage': route.path === '/FitProShop/about' }">О нас</button>
 			</RouterLink>
 
-			<RouterLink :to="{ name: 'contacts' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'contacts' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn" :class="{ 'activePage': route.path === '/FitProShop/contacts' }">Контакты</button>
 			</RouterLink>
 
-			<RouterLink :to="{ name: 'FAQ' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'FAQ' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn" :class="{ 'activePage': route.path === '/FitProShop/FAQ' }">FAQ</button>
 			</RouterLink>
 
-			<RouterLink :to="{ name: 'basket' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'basket' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn" :class="{ 'activePage': route.path === '/FitProShop/basket' }">Корзина</button>
 			</RouterLink>
 
 			<!-- Кабинет: выделяем активной любую из 3х вложенных страниц -->
-			<RouterLink :to="{ name: 'accountData' }" class="navBtnRoute">
+			<RouterLink :to="{ name: 'accountData' }" class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn"
 					:class="{ 'activePage': (route.path === '/FitProShop/account/accountData' || route.path === '/FitProShop/account/accountFav' || route.path === '/FitProShop/account/accountOrder') }">Кабинет</button>
 			</RouterLink>
 
 			<RouterLink v-if="(userActive && userActive?.role !== 'Пользователь')" :to="{ name: 'usersList' }"
-				class="navBtnRoute">
+				class="navBtnRoute" @click="isMenuOpen.value = false">
 				<button class="navBtn"
 					:class="{ 'activePage': (route.path === '/FitProShop/admin' || route.path === '/FitProShop/admin/usersList' || route.path === '/FitProShop/admin/addProduct') }">Админская</button>
 			</RouterLink>
