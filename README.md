@@ -15,7 +15,15 @@
 Поэтому пока запуск локально
 
 ### Локальный запуск
-`git clone https://github.com/SergeyTsybrenok/FitProShop.git`
-`cd FitProShop`
-`npm install`
-`npm run dev`
+```
+git clone https://github.com/SergeyTsybrenok/FitProShop.git
+```
+```
+cd FitProShop
+```
+```
+npm install
+```
+```
+npm run dev
+```
