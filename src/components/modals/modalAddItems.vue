@@ -11,6 +11,7 @@ const props = defineProps({
     <div v-if="props.propsList === 'deleteBasket'">Товар удалён из корзины</div>
     <div v-if="props.propsList === 'addfavorite'">Товар добавлен в избранное</div>
     <div v-if="props.propsList === 'deletefavorite'">Товар удалён из избранного</div>
+    <div v-if="props.propsList === 'addProduct'">Товар добавлен</div>
   </div>
 </template>
 

@@ -92,7 +92,9 @@ function deletefavorite(productItem, userId) {
         <!-- Избранное -->
         <div v-if="userActive" class="addOrDeleteInFavorite">
           <!-- Кнопка добавления в избранное -->
-          <button v-if="!localProduct.favorite" class="favoriteButton" @click="addfavorite(localProduct, userActive?.id)">
+          <button v-if="!localProduct.favorite"
+          class="favoriteButton"
+          @click="addfavorite(localProduct, userActive?.id)">
             <img class="favStar" src="/src/img/favoriteGrey.svg" alt="">
           </button>
 

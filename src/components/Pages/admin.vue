@@ -6,6 +6,7 @@ import useUsers from '../../composables/useUsers';
 import useProducts from '../../composables/useProducts';
 import { computed } from 'vue';
 import usersList from './adminElem/usersList.vue';
+import { RouterLink } from 'vue-router';
 
 const usersAll = useUsers().usersLocalStorage;
 const userActiveId = useUsers().activityUserId;
@@ -33,13 +34,15 @@ if (!userActive.value) {
   <div v-if="userActive">
     <h1>Админская</h1>
     <nav class="nav" v-if="userActive">
-    <RouterLink :to="{ name: 'usersList' }" class="navBtnRouter" >
-      <button class="navBtn" :class="{'activePage' : route.path === '/FitProShop/admin/usersList'}">Список пользователей</button>
+    <RouterLink :to="{ name: 'usersList' }" >
+      Пользователи
     </RouterLink>
-    <!-- <RouterLink :to="{ name: 'addProduct' }" class="navBtnRouter">
-      <button class="navBtn" :class="{ 'activePage': route.path === '/admin/addProduct' }">Добавление товара</button>
-    </RouterLink> -->
-
+    <RouterLink :to="{ name: 'productList' }" >
+      Редактировать товары
+    </RouterLink>
+    <RouterLink :to="{ name: 'addProduct' }" >
+      Добавить товар
+    </RouterLink>
   </nav>
   <RouterView></RouterView>
   </div>
@@ -55,10 +58,16 @@ if (!userActive.value) {
 
 <style scoped>
 /* Контейнер для навигационных кнопок */
+a {
+  color: white;
+}
 .nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+  align-items: center;
 	width: 100%;
+  background-color: black;
+  height: 40px;
 }
 
 /* Стиль для кнопок навигации */
