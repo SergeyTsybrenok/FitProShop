@@ -31,8 +31,8 @@ function ChangePrice(increaseDecraeseValue: number) {
 <template>
     <h2>Add product</h2>
     
-    <div class="main-container container-column">
-        <div class="container">
+    <div class="container-column">
+        <div class="container center">
             <label for="name">Название</label>
             <input name="name" type="text" v-model="newProduct.name">
 
@@ -69,6 +69,7 @@ function ChangePrice(increaseDecraeseValue: number) {
         background-color: #cecece;
     }
     .container-column {
+        display: flex;
         justify-content: center;
         flex-direction: column;
     }
@@ -77,5 +78,8 @@ function ChangePrice(increaseDecraeseValue: number) {
         background-color: black;
         color: white;
         font-weight: bold;
+    }
+    .center {
+        align-self: center;
     }
 </style>
