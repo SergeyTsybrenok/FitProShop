@@ -3,7 +3,14 @@ import { watch, ref } from "vue";
 const productsLocalStorage = ref([]);
 const basketLocalStorage = ref([]);
 const favoriteLocalStorage = ref([]);
+const imageURLs = ref([{
+  id: 1,
+  url: "https...",
+  name: "Сосиска"
+}
+]);
 
+//#region default product list
 const defaultProducts = [
   // 0
   {
@@ -247,6 +254,7 @@ const defaultProducts = [
     gender: "Уни",
   },
 ];
+//#endregion
 
 // Загружаем данные из localStorage для всех продуктов
 try {
@@ -281,6 +289,9 @@ try {
   favoriteLocalStorage.value = [];
 }
 
+// function updateImages() {
+
+// }
 // Следим за изменениями в продуктах и сохраняем их в localStorage
 watch(
   productsLocalStorage,
@@ -401,16 +412,46 @@ function findProduct(productId) {
   return productsLocalStorage.value.find((product) => product.id === productId);
 }
 
+function DeleteProduct (productToDelete) {
+  // const product = productsLocalStorage.value.find(
+  //   (element) => element.productData.id === productToDelete.id
+  // );
+  const productIndex = productsLocalStorage.value.indexOf(productToDelete)
+  productsLocalStorage.value.splice(productIndex)
+}
+ 
+//TODO Make computed
+function GetMaxIdOfArray(array) {
+  try {
+    const listOfIds = [];
+    array.forEach(product => {
+      listOfIds.push(product.id);
+    });
+    return Math.max(...listOfIds);
+  }
+  catch (error) {
+    return 1;
+  }
+}
+
+function AddNewProduct(newProduct) {
+  newProduct.id = GetMaxIdOfArray(productsLocalStorage.value) + 1;
+  productsLocalStorage.value.push(newProduct);
+}
+
+
 // Экспорт функций и переменных
 export default function useProducts() {
   return {
-    findProduct,
     basketLocalStorage,
+    favoriteLocalStorage,
+    productsLocalStorage,
+    findProduct,
     addInBasket,
     deleteInBasket,
     addInFavorite,
     deleteInFavorite,
-    favoriteLocalStorage,
-    productsLocalStorage,
+    AddNewProduct,
+    DeleteProduct
   };
 }

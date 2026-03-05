@@ -23,6 +23,8 @@ import productCard from "./components/Pages/productCard.vue";
 
 // Импорты для админа
 import usersList from "./components/Pages/adminElem/usersList.vue"
+import productList from "./components/Pages/adminElem/productList.vue"
+import AddProductNew from "./components/Pages/adminElem/addProductNew.vue";
 
 // Импорт модальных окон
 import modalAllOrders from "./components/modals/modalAllOrders.vue";
@@ -47,6 +49,8 @@ const routes = [
   {path: '/FitProShop/documents', component: documents, name: 'documents'},
   {path: '/FitProShop/admin', component: admin, name: 'admin', children: [
     {path: 'usersList', component: usersList, name: 'usersList'},
+    {path: 'productList', component: productList, name: 'productList'},
+    {path: 'addProduct', component: AddProductNew, name: 'addProduct'},
     ]
   },
   { path: "/FitProShop/account", component: account, name: "account", children: [
